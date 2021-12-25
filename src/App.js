@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Profile from './profile/Profile.js';
+import Mind from './Mind.jpg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
+  const handleName = fullName => alert(fullName)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Profile fullName="Wassim Refai" bio="Welcome To Go My Code" profession="Software Developper" handleName ={handleName} age = "21" > 
+      <img src={Mind} alt="myimage" />
+      </Profile>
+      
+      </div>
   );
 }
 
-export default App;
+ export default App;
